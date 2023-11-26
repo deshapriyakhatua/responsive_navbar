@@ -220,7 +220,83 @@ a {
   transform: rotate(180deg);
 }
 
-/*=============== BREAKPOINTS ===============*/
+/* ========= navbar profile ========= */
+#navbar_profile{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+#navbar_profile > .navbar_profile_child{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+#navbar_profile .navbar_profile_icons{
+  font-size: 24px;
+}
+
+#navbar_profile .navbar_profile_name{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Account Dropdown Menu */
+
+#navbar_profile_account{
+  position: relative;
+}
+
+#navbar_profile_account > #navbar_account_dropdown{
+  height: 250px;
+  padding: 20px;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  cursor: default;
+  background-color: #fff;
+  box-shadow: 0 6px 8px hsla(220, 68%, 12%, 0.05);
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.dropList{
+  width: max-content;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: unset;
+  font-size: var(--small-font-size);
+  display: inline-block;
+}
+#navbar_profile_account:hover #navbar_account_dropdown{
+  visibility: visible;
+  top: 95%;
+  opacity: 1;
+}
+
+#navbar_profile_account .dropList:hover{
+  color: #000000;
+}
+
+#navbar_account_dropdown_login{
+  background-color: burlywood;
+  font-weight: bold;
+}
+
+/*=============== responsive ===============*/
 
 @media screen and (max-width: 375px) {
   .nav__data {
@@ -341,79 +417,13 @@ a {
     pointer-events: initial;
     cursor: initial;
   }
+  #navbar_profile_account > #navbar_account_dropdown {
+    display: flex;
+  }
 }
 
 
 
 
-#navbar_profile{
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-}
 
-#navbar_profile > .navbar_profile_child{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--title-color);
-  cursor: pointer;
-}
-
-#navbar_profile .navbar_profile_icons{
-  font-size: 24px;
-}
-
-#navbar_profile .navbar_profile_name{
-  font-size: 12px;
-  font-weight: bold;
-}
-
-/* Account Dropdown Menu */
-
-#navbar_profile_account{
-  position: relative;
-}
-
-#navbar_profile_account > #navbar_account_dropdown{
-  width: 200px;
-  height: 250px;
-  padding: 20px;
-  position: absolute;
-  top: 95%;
-  right: 0;
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  cursor: default;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: all 500ms;
-}
-
-.dropList{
-  width: 85%;
-  text-decoration: none;
-  color: unset;
-  font-size: 15px;
-  display: inline-block;
-  padding: 4px;
-}
-#navbar_profile_account:hover #navbar_account_dropdown{
-  display: flex;
-}
-
-#navbar_profile_account a:hover{
-  background-color: #f8d7cf; 
-}
-
-#navbar_account_dropdown_login{
-  background-color: burlywood;
-}
 
