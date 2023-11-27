@@ -4,33 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="styles.css">
-
+        <!--=============== Google Icon ===============-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,0,0" />
 
-        <title>Responsive navigation bar - Bedimcode</title>
+        <title>Responsive Navbar</title>
     </head>
     <body>
-        <!--=============== NAVBAR ===============-->
-        <header class="header">
-            <nav class="nav container">
-                <div class="nav__data">
-                    <div class="nav__toggle" id="nav-toggle">
-                        <span class="material-symbols-rounded nav__toggle-menu"> menu </span>
-                        <i class="material-symbols-rounded nav__toggle-close"> close </i>
+        <!--=============== Navbar ===============-->
+        <header class="header_main">
+            <nav class="navbar_main">
+                <div class="navbar_data">
+                    <div id="navbar_toggle">
+                        <span class="material-symbols-rounded navbar_toggle_menu"> menu </span>
+                        <i class="material-symbols-rounded navbar_toggle_close"> close </i>
                     </div>
-                    <a href="#" class="nav__logo">
+                    <a href="#" class="navbar_logo">
                         <span class="material-symbols-rounded"> eco </span> Earz
                     </a>
                 </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <!--=============== DROPDOWN 1 ===============-->
+                <div class="navbar_menu" id="navbar_menu">
+                    <ul class="navbar_list">
                         <li class="dropdown__item">                      
                             <div class="nav__link dropdown__button">
                                 Discover <span class="material-symbols-rounded dropdown__arrow"> expand_more </span>
@@ -128,8 +124,6 @@
                                 </div>
                             </div>
                         </li>
-
-                        <!--=============== DROPDOWN 2 ===============-->
                         <li class="dropdown__item">
                             <div class="nav__link dropdown__button">
                                 Gaming <span class="material-symbols-rounded dropdown__arrow"> expand_more </span>
@@ -193,8 +187,6 @@
                                 </div>
                             </div>
                         </li>
-
-                        <!--=============== DROPDOWN 3 ===============-->
                         <li class="dropdown__item">
                             <div class="nav__link dropdown__button">
                                 Accessories <span class="material-symbols-rounded dropdown__arrow"> expand_more </span>
@@ -276,8 +268,6 @@
                                 </div>
                             </div>
                         </li>
-
-                        <!--=============== DROPDOWN 4 ===============-->
                         <li class="dropdown__item">                        
                             <div class="nav__link dropdown__button">
                                 Company <span class="material-symbols-rounded dropdown__arrow"> expand_more </span>
@@ -365,7 +355,7 @@
             </nav>
         </header>
         
-        <!--=============== MAIN JS ===============-->
+        <!--=============== JS ===============-->
         <script src="main.js"></script>
     </body>
 </html>

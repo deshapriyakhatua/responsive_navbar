@@ -1,6 +1,6 @@
 /*=============== SHOW MENU ===============*/
-const navToggle = document.getElementById('nav-toggle');
-const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('navbar_toggle');
+const navMenu = document.getElementById('navbar_menu');
 
 navToggle.addEventListener('click', () =>{
     document.getElementById("navbar_search_dropdown").className  = 'hide_dropdown';
@@ -90,7 +90,7 @@ const showOrHideDropdown = (icon, item)=> {
 showOrHideDropdown(searchIcon, searchDropdown);
 showOrHideDropdown(accountIcon, accountDropdown);
 
-// hide search & account dropdown when nav-menu is hovered
+// hide search & account dropdown when navbar_menu is hovered
 navMenu.addEventListener("mouseover", ()=> {
     accountDropdown.className = 'hide_dropdown';
     searchDropdown.className = 'hide_dropdown';

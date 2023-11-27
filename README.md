@@ -1,11 +1,12 @@
 # Responsive Navigation Bar
-## [Watch it on web](https://deshapriyakhatua.github.io/responsive_navbar/)
-### Responsive Navigation Bar
+#### [https://deshapriyakhatua.github.io/responsive_navbar](https://deshapriyakhatua.github.io/responsive_navbar/)
+### Used Languages
 
-- Responsive Navigation Bar Using HTML CSS & JavaScript
-- With Dropdown Mega Menu
-- With a beautiful minimalist interface.
-- Developed first with the Mobile First methodology, then for desktop.
+- HTML
+- CSS
+- JavaScript
+
+#### Developed first for Mobile, then for desktop.
 
 
 ![preview img](/preview.png)
