@@ -15,8 +15,6 @@ const showOrHideMenu = () =>{
 
 }
 
-
-
 /*=============== SHOW DROPDOWN MENU ===============*/
 const dropdownItems = document.querySelectorAll('.dropdown__item');
 

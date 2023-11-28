@@ -23,7 +23,7 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   /*========== width & height ==========*/
-  --main-navbar-width: 1120px;
+  --main-navbar-width: 70rem;
 }
 @media screen and (min-width: 1024px) {
   :root {
@@ -40,24 +40,18 @@
   padding: 0;
   margin: 0;
 }
-
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
-/*=============== REUSABLE CSS CLASSES ===============*/
-
 
 /*=============== HEADER ===============*/
 .header_main {
@@ -76,7 +70,7 @@ a {
   user-select: none; /* Standard syntax */
 }
 
-/*=============== NAV ===============*/
+/* =============== Navbar Data & Logo =============== */
 .navbar_main {
   height: var(--header-height);
   max-width: var(--main-navbar-width);
@@ -90,7 +84,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .navbar_logo {
   display: inline-flex;
@@ -108,8 +102,8 @@ a {
 }
 #navbar_toggle {
   position: relative;
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 #navbar_toggle>.navbar_toggle_menu,#navbar_toggle>.navbar_toggle_close {
   font-size: 1.5rem;
@@ -125,6 +119,8 @@ a {
 .navbar_toggle_close {
   opacity: 0;
 }
+
+/* =============== Navbar Menu =============== */
 .navbar_menu {
   background-color: var(--body-color);
   position: absolute;
@@ -164,13 +160,12 @@ a {
   opacity: 0;
   transform: rotate(90deg);
 }
-
 .show-icon .navbar_toggle_close {
   opacity: 1;
   transform: rotate(90deg);
 }
 
-/*=============== DROPDOWN ===============*/
+/* === Navbar Menu Dropdown === */
 .dropdown__button {
   cursor: pointer;
 }
@@ -225,7 +220,7 @@ a {
   transform: rotate(180deg);
 }
 
-/* ============ navbar profile =============*/
+/* ============ Navbar Profile ============= */
 
 #navbar_profile{
   height: 100%;
@@ -233,7 +228,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 1.56rem;
 }
 
 #navbar_profile > .navbar_profile_child{
@@ -251,11 +246,11 @@ a {
 }
 
 #navbar_profile > .navbar_profile_child > .navbar_profile_child_title > .navbar_profile_icons{
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 #navbar_profile > .navbar_profile_child > .navbar_profile_child_title > .navbar_profile_name{
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
 }
 
@@ -299,15 +294,15 @@ a {
 #search_bar_input_container > #search_bar_input{
   display: inline-block;
   width: 100%;
-  height: 45px;
-  line-height: 24px;
+  height: 2.81rem;
+  line-height: 1.5rem;
   padding: 1rem;
   padding-right: 3rem;
   border: none;
   font-size: var(--small-font-size);
   color: var(--text-color);
   background-color: inherit;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.031rem;
 }
 
 #search_bar_input_container > #search_bar_input:focus{
@@ -366,7 +361,7 @@ a {
 
 .dropList{
   width: max-content;
-  padding: 5px 20px;
+  padding: .31rem 1.25rem;
   text-decoration: none;
   color: unset;
   font-size: var(--small-font-size);
@@ -387,10 +382,10 @@ a {
 
 @media screen and (max-width: 375px) {
   .navbar_data {
-    gap: 10px;
+    gap: .625rem;
   }
   .navbar_main #navbar_profile{
-    gap: 10px;
+    gap: .625rem;
   }
   .dropdown__group {
     padding-left: 1.5rem;
@@ -403,14 +398,18 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* Nav */
+  /* === Nav === */
   .navbar_main {
     height: calc(var(--header-height) + 2rem);
     margin-inline: auto;
   }
+
+  /* === Navbar Data === */
   #navbar_toggle {
     display: none;
   }
+
+  /* === Navbar Menu === */
   .navbar_menu {
     background-color: var(--body-color);
     position: static;
@@ -497,6 +496,8 @@ a {
     pointer-events: initial;
     cursor: initial;
   }
+
+  /* === Navbar Profile === */
   #navbar_profile_search > #navbar_search_dropdown {
     width: calc(2rem + var(--main-navbar-width));
   }
