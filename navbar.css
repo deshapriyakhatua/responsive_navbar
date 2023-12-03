@@ -7,9 +7,9 @@ header {
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(220, 68%, 54%);
   --first-color-lighten: hsl(220, 68%, 97%);
-  --title-color: hsl(220, 48%, 28%);
-  --text-color: hsl(220, 12%, 45%);
-  --body-color: hsl(220, 100%, 99%);
+  --title-color: #333;
+  --text-color: #333;
+  --body-color: #fff;
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'DM Sans', sans-serif;
@@ -17,8 +17,8 @@ header {
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
   /*========== Font weight ==========*/
-  --font-medium: 500;
-  --font-semi-bold: 600;
+  --font-medium: 400;
+  --font-semi-bold: 700;
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -398,9 +398,12 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .header_main {
+    padding: 0 3rem;
+  }
   /* === Nav === */
   .navbar_main {
-    height: calc(var(--header-height) + 2rem);
+    height: calc(var(--header-height) + 1.5rem);
     margin-inline: auto;
   }
 
@@ -444,7 +447,7 @@ a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 6.5rem;
+    top: 100%;
     padding-bottom: 1rem;
     background-color: transparent;
     pointer-events: none;
@@ -491,18 +494,21 @@ a {
     transform: rotate(180deg);
   }
   .dropdown__item:hover > .dropdown__container {
-    top: 5.5rem;
+    top: 95%;
     opacity: 1;
     pointer-events: initial;
     cursor: initial;
   }
 
   /* === Navbar Profile === */
-  #navbar_profile_search > #navbar_search_dropdown {
-    width: calc(2rem + var(--main-navbar-width));
-  }
   #search_bar_input_container > #search_bar_input {
     font-size: var(--small-font-size);
+  }
+}
+
+@media screen and (min-width: 100rem) {
+  #navbar_profile_search > #navbar_search_dropdown {
+    width: calc(2rem + var(--main-navbar-width));
   }
 }
 
